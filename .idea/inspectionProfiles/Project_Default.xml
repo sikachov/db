@@ -1,0 +1,25 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0" is_locked="false">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="11">
+            <item index="0" class="java.lang.String" itemvalue="oslo.messaging" />
+            <item index="1" class="java.lang.String" itemvalue="six" />
+            <item index="2" class="java.lang.String" itemvalue="oslo.i18n" />
+            <item index="3" class="java.lang.String" itemvalue="keystonemiddleware" />
+            <item index="4" class="java.lang.String" itemvalue="SQLAlchemy" />
+            <item index="5" class="java.lang.String" itemvalue="python-neutronclient" />
+            <item index="6" class="java.lang.String" itemvalue="oslo.rootwrap" />
+            <item index="7" class="java.lang.String" itemvalue="Routes" />
+            <item index="8" class="java.lang.String" itemvalue="python-glanceclient" />
+            <item index="9" class="java.lang.String" itemvalue="python-keystoneclient" />
+            <item index="10" class="java.lang.String" itemvalue="oslo.config" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
