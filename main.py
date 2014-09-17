@@ -1,15 +1,18 @@
 __author__ = 'evgeny'
 
-import MySQLdb
+import psycopg2
 
 
-db = MySQLdb.connect("localhost", "evgeny", "sikachov")
+try:
+    db = psycopg2.connect("dbname='users' user='evgeny' host='localhost' password='sikachov'")
+except:
+    print "I am unable to connect to the database"
 
 
 def do_sql(command):
     cursor = db.cursor()
     cursor.execute(command)
-    return cursor.fetchone()
+    return cursor.fetchall()
 
 
 def close_connection(database):
@@ -19,3 +22,4 @@ def close_connection(database):
 print "Database version : %s " % do_sql("SELECT VERSION()")
 
 close_connection(db)
+
