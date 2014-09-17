@@ -19,6 +19,10 @@ def close_connection(database):
     database.close()
 
 
+while (1):
+    choice=int(raw_input("1.Add user\n 2.Show db\n 3.Show tables"))
+    if choice==3:
+        print do_sql("show all")
 print "Database version : %s " % do_sql("SELECT VERSION()")
 
 close_connection(db)
